@@ -10272,15 +10272,15 @@ const z0 = (r) => "prophecy" in r && "allies" in r.prophecy, _0 = (r) => "prophe
   }
 ], O0 = {
   color: {
-    baseURL: "modules/Tarokka/assets/img/color/",
+    baseURL: "modules/tarokka/assets/img/color/",
     extension: ".webp"
   },
   grayscale: {
-    baseURL: "modules/Tarokka/assets/img/grayscale/",
+    baseURL: "modules/tarokka/assets/img/grayscale/",
     extension: ".webp"
   },
   standard: {
-    baseURL: "modules/Tarokka/assets/img/standard/",
+    baseURL: "modules/tarokka/assets/img/standard/",
     extension: ".svg"
   }
 }, R0 = {
@@ -11447,7 +11447,7 @@ const H0 = 1e3, wh = H0 / 30, Xh = {
 }, U0 = {
   tilt: !0,
   remoteTilt: !0
-}, C0 = ["tilt", "remoteTilt"], j0 = ["tilt", "remoteTilt"], Mn = "Tarokka", Ju = "gameState", B0 = `${Mn}.${Ju}`, Ku = new Yh();
+}, C0 = ["tilt", "remoteTilt"], j0 = ["tilt", "remoteTilt"], Mn = "tarokka", Ju = "gameState", B0 = `${Mn}.${Ju}`, Ku = new Yh();
 function G0() {
   game.settings.register(Mn, Ju, {
     scope: "world",
@@ -12408,7 +12408,7 @@ function ky() {
   const { gameData: r } = Tt(), { cards: p } = r, v = (f, z) => p[Tl[z]];
   return /* @__PURE__ */ E.jsx("div", { className: "grid grid-cols-3 grid-rows-3 gap-2 sm:gap-4 md:gap-8 w-fit mx-auto", children: Array.from({ length: 9 }).map(v).map((f, z) => /* @__PURE__ */ E.jsx("div", { className: "aspect-[2/3]}", children: f && /* @__PURE__ */ E.jsx(Ny, { card: f, cardIndex: Tl[z] }) }, z)) });
 }
-const Hy = "url('modules/Tarokka/assets/img/table3-bg.gif')";
+const Hy = "url('modules/tarokka/assets/img/table3-bg.gif')";
 function Uy() {
   const { gameData: r, isGM: p, emitStartReading: v } = Tt();
   return /* @__PURE__ */ E.jsxs(
@@ -12459,7 +12459,7 @@ class jy extends Jh {
     return Cy(super.defaultOptions, {
       id: "tarokka-app",
       title: game.i18n.localize("TAROKKA.windowTitle"),
-      template: "modules/Tarokka/dist/empty.html",
+      template: "modules/tarokka/dist/empty.html",
       width: 920,
       height: 720,
       resizable: !0,
@@ -12482,7 +12482,7 @@ class jy extends Jh {
     return (v = this.root) == null || v.unmount(), this.root = null, super.close(p);
   }
 }
-const By = "Tarokka";
+const By = "tarokka";
 let pf = null;
 function Vu() {
   pf || (pf = new jy()), pf.render(!0, { focus: !0 });

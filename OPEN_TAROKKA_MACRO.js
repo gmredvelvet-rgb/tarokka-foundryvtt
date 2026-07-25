@@ -1,4 +1,4 @@
-const tarokka = game.modules.get('Tarokka');
+const tarokka = game.modules.get('tarokka');
 
 if (!tarokka?.active) {
 	ui.notifications.error('El módulo Tarokka no está activo. Actívalo en Manage Modules.');

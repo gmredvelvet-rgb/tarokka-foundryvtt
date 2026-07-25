@@ -2,7 +2,7 @@ import TarokkaDeck from '@/lib/TarokkaDeck';
 import { GAME_START, SETTINGS } from '@/constants';
 import type { GameState, Settings } from '@/types';
 
-export const MODULE_ID = 'Tarokka';
+export const MODULE_ID = 'tarokka';
 const SETTING_KEY = 'gameState';
 const SETTING_FQN = `${MODULE_ID}.${SETTING_KEY}`;
 

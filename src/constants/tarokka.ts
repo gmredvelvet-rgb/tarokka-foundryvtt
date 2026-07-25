@@ -48,15 +48,15 @@ export const layout: Layout[] = [
 
 export const cardStyles = {
 	color: {
-		baseURL: 'modules/Tarokka/assets/img/color/',
+		baseURL: 'modules/tarokka/assets/img/color/',
 		extension: '.webp',
 	},
 	grayscale: {
-		baseURL: 'modules/Tarokka/assets/img/grayscale/',
+		baseURL: 'modules/tarokka/assets/img/grayscale/',
 		extension: '.webp',
 	},
 	standard: {
-		baseURL: 'modules/Tarokka/assets/img/standard/',
+		baseURL: 'modules/tarokka/assets/img/standard/',
 		extension: '.svg',
 	},
 };

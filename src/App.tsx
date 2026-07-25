@@ -5,7 +5,7 @@ import Settings from '@/components/Settings';
 import SupportLinks from '@/components/SupportLinks';
 import TarokkaGrid from '@/components/TarokkaGrid';
 
-const TABLE_BACKGROUND = "url('modules/Tarokka/assets/img/table3-bg.gif')";
+const TABLE_BACKGROUND = "url('modules/tarokka/assets/img/table3-bg.gif')";
 
 export default function App() {
 	const { gameData, isGM, emitStartReading } = useAppContext();

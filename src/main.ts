@@ -4,7 +4,7 @@ import { TarokkaApplication } from '@/TarokkaApplication';
 import { registerGameState } from '@/foundry/state';
 import { registerSocket } from '@/foundry/socket';
 
-const MODULE_ID = 'Tarokka';
+const MODULE_ID = 'tarokka';
 
 let appInstance: TarokkaApplication | null = null;
 

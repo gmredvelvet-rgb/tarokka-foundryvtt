@@ -25,7 +25,7 @@ https://github.com/gmredvelvet-rgb/tarokka-foundryvtt/releases/latest/download/m
 
 Then enable **Tarokka** in your world's module settings. You can also download
 `module.zip` from the [latest release](https://github.com/gmredvelvet-rgb/tarokka-foundryvtt/releases/latest)
-and extract it into your `Data/modules/Tarokka` folder manually.
+and extract it into your `Data/modules/tarokka` folder manually.
 
 ## Support
 
@@ -60,7 +60,7 @@ If the toolbar button doesn't appear for any reason, open the browser console
 and run:
 
 ```js
-game.modules.get('Tarokka').api.open();
+game.modules.get('tarokka').api.open();
 ```
 
 or wire that same call up to a macro.

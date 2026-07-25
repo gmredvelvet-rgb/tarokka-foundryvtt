@@ -32,7 +32,7 @@ export class TarokkaApplication extends FoundryApplication {
 		return foundryMergeObject(super.defaultOptions, {
 			id: 'tarokka-app',
 			title: game.i18n.localize('TAROKKA.windowTitle'),
-			template: 'modules/Tarokka/dist/empty.html',
+			template: 'modules/tarokka/dist/empty.html',
 			width: 920,
 			height: 720,
 			resizable: true,

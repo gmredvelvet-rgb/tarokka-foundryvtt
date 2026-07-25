@@ -1,5 +1,5 @@
 {
-	"id": "Tarokka",
+	"id": "tarokka",
 	"title": "Tarokka",
 	"description": "A real-time Tarokka card reading tool for Dungeons & Dragons: Curse of Strahd. Simulates Madam Eva's fortune-telling, revealing a hero's fate and Strahd's secrets, with live sync between the GM and connected players. Ported from https://github.com/mcdoh/tarokka.",
 	"version": "1.0.0",
