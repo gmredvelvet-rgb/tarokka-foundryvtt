@@ -40,6 +40,21 @@ export class TarokkaApplication extends FoundryApplication {
 		});
 	}
 
+	// The classic Application renders by fetching `template` over HTTP. If that
+	// file is missing from the installed package (or the path/casing is wrong),
+	// the default _renderInner rejects and the window never appears — with no
+	// visible error. Fall back to an empty mount so React can still take over in
+	// activateListeners; the template content is discarded there anyway.
+	async _renderInner(data: unknown): Promise<any> {
+		try {
+			return await super._renderInner(data);
+		} catch (err) {
+			console.warn('Tarokka | template render failed, using empty mount:', err);
+			const jq = (globalThis as any).jQuery ?? (globalThis as any).$;
+			return jq('<div class="tarokka-mount"></div>');
+		}
+	}
+
 	activateListeners(html: any): void {
 		super.activateListeners(html);
 
