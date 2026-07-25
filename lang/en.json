@@ -1,0 +1,8 @@
+{
+	"TAROKKA.controlName": "Tarokka Reading",
+	"TAROKKA.windowTitle": "Tarokka",
+	"TAROKKA.startReading": "Start Reading",
+	"TAROKKA.newReading": "New Reading",
+	"TAROKKA.noReadingGM": "No reading has been started yet.",
+	"TAROKKA.noReadingPlayer": "The GM hasn't started a Tarokka reading yet."
+}

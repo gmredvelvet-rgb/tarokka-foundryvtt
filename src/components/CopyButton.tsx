@@ -1,0 +1,55 @@
+import { ForwardRefExoticComponent, RefAttributes, useState } from 'react';
+import { LucideProps, Copy as CopyIcon, Check as CheckIcon } from 'lucide-react';
+
+import ToolTip from '@/components/ToolTip';
+
+type CopyButtonProps = {
+	title?: string;
+	copy: string;
+	Icon?: ForwardRefExoticComponent<Omit<LucideProps, 'ref'> & RefAttributes<SVGSVGElement>>;
+	tooltip?: string | string[];
+	className?: string;
+	size?: number;
+};
+
+export default function CopyButton({
+	title,
+	copy,
+	Icon = CopyIcon,
+	tooltip = ['Copy', 'Copied'],
+	className,
+	size = 16,
+}: CopyButtonProps) {
+	const [copied, setCopied] = useState(false);
+
+	const handleCopy = async () => {
+		try {
+			await navigator.clipboard.writeText(copy);
+			setCopied(true);
+			setTimeout(() => setCopied(false), 2000);
+		} catch (err) {
+			console.error('Failed to copy!', err);
+		}
+	};
+
+	const ttContent = (
+		<span className="text-yellow-300">
+			{Array.isArray(tooltip) && tooltip.length > 1 ? (copied ? tooltip[1] : tooltip[0]) : tooltip}
+		</span>
+	);
+
+	return (
+		<button onClick={handleCopy} className={`cursor-pointer ${className}`}>
+			<ToolTip content={ttContent} className="w-full font-yellow-400">
+				<div className="flex items-center gap-2 w-full text-sm font-medium">
+					{title}
+					{copied ? (
+						<CheckIcon className="ml-auto" size={size} />
+					) : (
+						<Icon className="ml-auto" size={size} />
+					)}
+				</div>
+			</ToolTip>
+		</button>
+	);
+}

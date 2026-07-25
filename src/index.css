@@ -1,0 +1,54 @@
+/* Only theme + utilities — deliberately skipping tailwindcss/preflight.css,
+   Tailwind's global CSS reset. This file is injected document-wide alongside
+   Foundry's own core CSS, so a reset here would (and did) break Foundry's
+   entire interface, not just this module's window. */
+@import 'tailwindcss/theme.css' layer(theme);
+@import 'tailwindcss/utilities.css' layer(utilities);
+@config '../tailwind.config.js';
+
+#tarokka-app .window-content {
+	padding: 0;
+	overflow: auto;
+	background: #0a0a0a;
+}
+
+#tarokka-root {
+	height: 100%;
+	width: 100%;
+}
+
+#tarokka-app {
+	.perspective {
+		perspective: 1000px;
+	}
+
+	.transform-style-preserve-3d {
+		transform-style: preserve-3d;
+	}
+
+	.backface-hidden {
+		backface-visibility: hidden;
+	}
+
+	.rotate-y-180 {
+		transform: rotateY(180deg);
+	}
+
+	.see-through {
+		mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 75%);
+		mask-size: cover;
+		mask-repeat: no-repeat;
+		-webkit-mask-image: radial-gradient(circle at center, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 75%);
+		-webkit-mask-size: cover;
+		-webkit-mask-repeat: no-repeat;
+	}
+
+	.scrollbar-hide {
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+
+	.scrollbar-hide::-webkit-scrollbar {
+		display: none;
+	}
+}

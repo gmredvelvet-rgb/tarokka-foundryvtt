@@ -1,0 +1,14 @@
+# dependencies
+/node_modules
+
+# build artifacts (dist/ is committed — Foundry loads it directly at runtime)
+*.tsbuildinfo
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,33 @@
+{
+	"id": "Tarokka",
+	"title": "Tarokka",
+	"description": "A real-time Tarokka card reading tool for Dungeons & Dragons: Curse of Strahd. Simulates Madam Eva's fortune-telling, revealing a hero's fate and Strahd's secrets, with live sync between the GM and connected players. Ported from https://github.com/mcdoh/tarokka.",
+	"version": "1.0.0",
+	"compatibility": {
+		"minimum": "12",
+		"verified": "14"
+	},
+	"authors": [
+		{
+			"name": "GM RedVelvet",
+			"url": "https://patreon.com/gmredvelvet"
+		}
+	],
+	"esmodules": ["dist/tarokka.js"],
+	"styles": ["dist/tarokka.css"],
+	"languages": [
+		{
+			"lang": "en",
+			"name": "English",
+			"path": "lang/en.json"
+		}
+	],
+	"socket": true,
+	"license": "MIT",
+	"readme": "https://github.com/gmredvelvet-rgb/tarokka-foundryvtt/blob/trunk/README.md",
+	"changelog": "https://github.com/gmredvelvet-rgb/tarokka-foundryvtt/blob/trunk/CHANGELOG.md",
+	"bugs": "https://github.com/gmredvelvet-rgb/tarokka-foundryvtt/issues",
+	"url": "https://github.com/gmredvelvet-rgb/tarokka-foundryvtt",
+	"manifest": "https://github.com/gmredvelvet-rgb/tarokka-foundryvtt/releases/latest/download/module.json",
+	"download": "https://github.com/gmredvelvet-rgb/tarokka-foundryvtt/releases/download/v1.0.0/module.zip"
+}
