@@ -14,44 +14,36 @@ function PatreonIcon({ className = '' }: { className?: string }) {
 type SupportButtonProps = {
 	href: string;
 	label: string;
-	title: string;
 	hoverClass: string;
 	children: React.ReactNode;
 };
 
-function SupportButton({ href, label, title, hoverClass, children }: SupportButtonProps) {
+function SupportButton({ href, label, hoverClass, children }: SupportButtonProps) {
 	return (
 		<a
 			href={href}
 			target="_blank"
 			rel="noopener noreferrer"
-			title={title}
-			className={`group flex items-center gap-0 overflow-hidden
+			title={`Support on ${label}`}
+			className={`flex items-center gap-2 px-3 py-1.5
 				bg-slate-800/90 text-yellow-400 border border-yellow-500/25
 				rounded-full shadow-lg backdrop-blur-sm
+				text-sm font-semibold whitespace-nowrap
 				transition-all duration-250 cursor-pointer
 				hover:text-slate-900 ${hoverClass}`}
 		>
-			<span className="flex shrink-0 items-center justify-center w-9 h-9">{children}</span>
-			<span
-				className="max-w-0 whitespace-nowrap text-sm font-semibold
-					opacity-0 -translate-x-2
-					transition-all duration-250
-					group-hover:max-w-[120px] group-hover:opacity-100 group-hover:translate-x-0 group-hover:pr-4"
-			>
-				{label}
-			</span>
+			<span className="flex shrink-0 items-center justify-center">{children}</span>
+			{label}
 		</a>
 	);
 }
 
 export default function SupportLinks() {
 	return (
-		<div className="fixed top-1/2 left-4 -translate-y-1/2 z-25 flex flex-col gap-3">
+		<div className="absolute bottom-4 left-4 z-30 flex flex-col gap-2">
 			<SupportButton
 				href={KO_FI_URL}
 				label="Ko-fi"
-				title="Support on Ko-fi"
 				hoverClass="hover:bg-[#ff5e5b] hover:border-[#ff5e5b]"
 			>
 				<Coffee className="w-4 h-4" />
@@ -59,7 +51,6 @@ export default function SupportLinks() {
 			<SupportButton
 				href={PATREON_URL}
 				label="Patreon"
-				title="Support on Patreon"
 				hoverClass="hover:bg-[#f96854] hover:border-[#f96854]"
 			>
 				<PatreonIcon className="w-4 h-4" />

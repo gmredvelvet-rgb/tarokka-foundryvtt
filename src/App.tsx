@@ -12,7 +12,7 @@ export default function App() {
 
 	return (
 		<main
-			className="h-full w-full flex flex-col items-center justify-center gap-4 bg-cover bg-center"
+			className="relative h-full w-full flex flex-col items-center justify-center gap-4 bg-cover bg-center"
 			style={{ backgroundImage: TABLE_BACKGROUND }}
 		>
 			<Settings />
