@@ -27,9 +27,13 @@ Then enable **Tarokka** in your world's module settings. You can also download
 `module.zip` from the [latest release](https://github.com/gmredvelvet-rgb/tarokka-foundryvtt/releases/latest)
 and extract it into your `Data/modules/tarokka` folder manually.
 
+## Licensing
+
+**This module is free.** It needs no subscription, no activation and no account, and it keeps working offline and forever — unlike the subscription-based modules in the Velvet range, it contains no licence check of any kind.
+
 ## Support
 
-If this module is useful at your table, you can support development here:
+If this module is useful at your table, you can support development here — welcome, but never required:
 
 - ☕ [Ko-fi](https://ko-fi.com/thegmstudio)
 - ❤️ [Patreon](https://patreon.com/gmredvelvet)
